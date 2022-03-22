@@ -1,0 +1,738 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0px;
+  font-family: "Playfair Display";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 61px 79px 0 48px;
+  margin-bottom: 118px;
+}
+.header .menu-icon {
+  font-size: 25px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F58923;
+  color: white;
+  padding: 34px 114px;
+}
+.footer .icons-container > i {
+  margin-right: 27px;
+}
+.footer .icons-container > i:last-child {
+  margin-right: 0;
+}
+.footer .copy-rights {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.banner {
+  padding: 0 118px;
+  margin-bottom: 89px;
+  position: relative;
+}
+.banner .designation {
+  font-size: 24px;
+}
+.banner-title {
+  font-size: 94px;
+  font-weight: 700;
+  line-height: 87px;
+}
+.banner-sub-title {
+  font-size: 30px;
+  line-height: 40px;
+}
+.banner .years-active {
+  display: inline-block;
+  font-size: 37px;
+  font-weight: 700;
+  background-color: #FC9C41;
+  padding: 0 16px;
+  margin-top: 20px;
+  color: white;
+  margin-bottom: 77px;
+}
+.banner .director-info {
+  margin-left: 5px;
+  padding: 22px 380px 22px 42px;
+  font-size: 30px;
+  border-left: 2px solid #FC9C41;
+}
+.banner-image {
+  position: absolute;
+  top: -45%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.banner .black-container {
+  background-color: #313131;
+  width: 350px;
+  height: 93px;
+}
+.banner .play-button-container {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(245, 137, 36, 0.1);
+  position: relative;
+  right: 31%;
+  margin-top: -148px;
+}
+.banner .play-button-inner-container {
+  padding: 21px 20px 15px 26px;
+  border-radius: 50%;
+  background-color: #F58923;
+}
+.banner .play-button-outer-container {
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(245, 137, 36, 0.1);
+}
+.banner .bg-container {
+  background-image: url("/images/director-image.png");
+  height: 575px;
+  width: 927px;
+}
+
+.quote-container {
+  margin-bottom: 65px;
+  color: white;
+  position: relative;
+}
+.quote-container .quote {
+  background-color: #F58923;
+  margin: 0 108px 0 514px;
+  padding: 48px 40px 48px 59px;
+  position: absolute;
+  top: 10%;
+}
+.quote-container .quote-mark {
+  font-size: 131px;
+  font-weight: 700;
+  line-height: 90px;
+}
+.quote-container .quote-description {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.quote-container .quote-by {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 87px;
+}
+.quote-container .director-img {
+  margin-left: 94px;
+}
+
+.about {
+  position: relative;
+  margin-bottom: 69px;
+}
+.about-container {
+  margin: 0 522px 0 182px;
+}
+.about-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.about-description {
+  font-size: 16px;
+  color: #707070;
+  margin-bottom: 15px;
+}
+.about-button {
+  display: inline-block;
+  padding: 12px 19px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid #707070;
+}
+.about .camera-image {
+  position: absolute;
+  bottom: -25%;
+  right: 0;
+}
+
+.life-journey {
+  background-color: #FAFAFA;
+  padding: 38px 0 85px 0;
+  margin-bottom: 75px;
+}
+.life-journey-top-container {
+  display: flex;
+  margin: 0 100px 63px;
+}
+.life-journey-title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 47px;
+  margin: 10px 56px 10px 0;
+}
+.life-journey-container {
+  padding: 10px 33px 0 20px;
+  border-left: 1px #707070 solid;
+}
+.life-journey-description {
+  font-size: 16px;
+}
+.life-journey-year {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 47px;
+  margin-bottom: 10px;
+}
+.life-journey .image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 16px 73px 100px;
+  border-bottom: 1px #707070 dashed;
+}
+.life-journey .image-container > img {
+  margin-bottom: 12px;
+}
+.life-journey .image-container > img:first-child {
+  margin: 0;
+}
+.life-journey .image-pointers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -21px 83px 0 192px;
+}
+.life-journey .image-pointers > div {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #707070;
+  border-radius: 50%;
+  background-color: #FAFAFA;
+}
+.life-journey .image-pointers .active-pointer {
+  position: relative;
+  background-color: rgba(245, 137, 36, 0.1);
+  border-radius: 50%;
+  border: none;
+  padding: 20px;
+  margin-right: 75px;
+}
+.life-journey .image-pointers .active-pointer-circle {
+  position: absolute;
+  top: 18.5%;
+  left: 19.8%;
+  height: 25px;
+  width: 25px;
+  background-color: #F58923;
+  border-radius: 50%;
+}
+
+.bibliography-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 133px 57px 118px;
+}
+.bibliography-title {
+  font-size: 50px;
+  font-weight: 700;
+}
+.bibliography-title > span {
+  color: #F58923;
+}
+.bibliography-left-circle, .bibliography-right-circle {
+  padding: 24px 21px 11px 22px;
+  border: 1px solid #707070;
+  border-radius: 50%;
+}
+.bibliography-left-circle {
+  margin-right: 10px;
+}
+.bibliography-bottom-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 202px 118px;
+}
+.bibliography-bottom-container .vision-cinema-container {
+  width: 226px;
+  margin: 0 39px 25px 0;
+}
+.bibliography-bottom-container .adventures-container {
+  width: 239px;
+  margin: 0 39px 25px 0;
+}
+.bibliography-bottom-container .apu-triology-container {
+  width: 243px;
+  margin: 0 39px 25px 0;
+}
+.bibliography-bottom-container .years-with-apu-container {
+  width: 243px;
+  margin: 0 39px 25px 0;
+}
+.bibliography-bottom-container .book-title {
+  font-size: 20px;
+  color: #1A1915;
+  margin-top: 23px;
+}
+
+.films-awards {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding-right: 0;
+}
+.films-awards .films {
+  display: flex;
+  flex-direction: column;
+  margin: 0 45px 0 100px;
+}
+.films-awards .films-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #3D3D3D;
+  margin: 0 0 31px 0;
+}
+.films-awards .films-top-container .languge-container {
+  display: flex;
+  align-items: baseline;
+  margin-right: 40px;
+}
+.films-awards .films-top-container .languge-container .language {
+  border: none;
+}
+.films-awards .films-title {
+  font-size: 50px;
+  font-weight: 700;
+}
+.films-awards .films-national-award {
+  font-size: 16px;
+  font-weight: 700;
+  color: #F58923;
+  margin-right: 59px;
+}
+.films-awards .films-bottom-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 49px 0;
+}
+.films-awards .films-info {
+  color: #1A1915;
+  margin: 0 25px 0 0;
+}
+.films-awards .films-info-image {
+  margin-bottom: 25px;
+}
+.films-awards .films-info-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+.films-awards .films-info-year {
+  font-size: 16px;
+}
+.films-awards .films .view-all {
+  align-self: center;
+  display: inline-block;
+  border: 1px solid #707070;
+  padding: 12px 34px;
+}
+.films-awards .awards {
+  position: relative;
+  background-color: #3D3D3D;
+  padding: 138px 20px 41px 55px;
+  margin-top: 55px;
+  font-size: 21px;
+  color: white;
+}
+.films-awards .awards-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.films-awards .awards > ul > li {
+  font-size: 21px;
+  margin-bottom: 20px;
+  list-style: circle;
+}
+.films-awards .awards .stars-image {
+  position: absolute;
+  top: -31%;
+}
+.films-awards .awards .satyajit-image {
+  position: absolute;
+  top: -25%;
+  left: 21.55%;
+}
+
+@media screen and (max-width: 991px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 61px 79px 0 48px;
+    margin-bottom: 118px;
+  }
+  .header .menu-icon {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 359px) {
+  .header > img {
+    height: 40px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .banner {
+    display: none;
+  }
+
+  .quote-container {
+    margin-bottom: 50px;
+  }
+  .quote-container .quote {
+    margin: 0 20px 0 400px;
+    padding: 10px 30px;
+  }
+  .quote-container .quote-mark {
+    font-size: 90px;
+    line-height: 70px;
+  }
+  .quote-container .quote-description {
+    font-size: 20px;
+  }
+  .quote-container .director-img {
+    margin-left: 0;
+  }
+
+  .about-container {
+    margin: 0 250px 0 50px;
+  }
+  .about .camera-image {
+    height: 400px;
+    top: -35%;
+  }
+
+  .life-journey .image-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 15px 25px;
+  }
+  .life-journey .image-container > img {
+    margin: 0 12px 12px 0;
+  }
+  .life-journey .image-container > img:first-child {
+    margin: 12px;
+  }
+  .life-journey .image-pointers {
+    justify-content: space-around;
+    margin: -21px 0 0 0;
+  }
+  .life-journey .image-pointers .active-pointer {
+    margin-right: 0;
+  }
+
+  .bibliography-top-container {
+    margin: 0 0 57px;
+  }
+  .bibliography-bottom-container {
+    justify-content: center;
+    margin: 0 0 102px;
+  }
+
+  .films-awards .films {
+    margin: 0 0 0 10px;
+  }
+  .films-awards .films-title {
+    font-size: 40px;
+  }
+  .films-awards .films-national-award {
+    margin-right: 20px;
+  }
+  .films-awards .films-bottom-container {
+    margin: 0 0 20px 0;
+  }
+  .films-awards .films-info {
+    margin-bottom: 20px;
+  }
+  .films-awards .films .view-all {
+    margin-bottom: 10px;
+  }
+  .films-awards .awards {
+    padding: 50px 0 41px 30px;
+    margin-top: 0;
+  }
+  .films-awards .awards-title {
+    font-size: 30px;
+  }
+  .films-awards .awards > ul > li {
+    font-size: 17px;
+  }
+  .films-awards .awards .stars-image {
+    position: static;
+  }
+  .films-awards .awards .satyajit-image {
+    position: absolute;
+    top: 46.5%;
+    left: 20.5%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .quote-container .quote {
+    margin: 0;
+    position: static;
+    box-shadow: 13px 12px 30px #707070;
+  }
+  .quote-container .director-img {
+    display: block;
+    margin-left: 0;
+    height: 485px;
+    box-shadow: 13px 12px 30px #707070;
+  }
+
+  .about-title {
+    font-size: 25px;
+  }
+  .about-description {
+    font-size: 14px;
+  }
+  .about-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  .about-container {
+    margin: 0 170px 0 0;
+  }
+  .about .camera-image {
+    height: 266px;
+    top: -7%;
+  }
+
+  .life-journey {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .life-journey-top-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px 63px;
+  }
+  .life-journey-title {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #707070;
+  }
+  .life-journey-container {
+    padding: 10px 33px 0 20px;
+    border: none;
+  }
+
+  .bibliography-title {
+    font-size: 35px;
+  }
+  .bibliography-left-circle, .bibliography-right-circle {
+    padding: 16px 13px 3px 14px;
+  }
+  .bibliography-bottom-container {
+    margin: 0;
+  }
+
+  .films-awards {
+    flex-direction: column;
+  }
+  .films-awards .films-bottom-container {
+    margin: 0;
+  }
+  .films-awards .awards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .films-awards .awards .satyajit-image {
+    top: 53.5%;
+    left: 37.5%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .quote-container .director-img {
+    height: 230px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .about-container {
+    margin: 0;
+  }
+  .about .camera-image {
+    position: static;
+    align-self: flex-end;
+    width: 90%;
+  }
+
+  .life-journey {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  .life-journey-top-container {
+    margin: 15px 15px 25px;
+  }
+  .life-journey-title {
+    font-size: 35px;
+    line-height: 35px;
+    margin: 10px 0;
+  }
+  .life-journey-container {
+    padding: 0 33px 0 20px;
+  }
+  .life-journey-description {
+    font-size: 14px;
+  }
+  .life-journey-year {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .bibliography-top-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .bibliography-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .bibliography-left-circle, .bibliography-right-circle {
+    padding: 16px 13px 3px 14px;
+  }
+  .bibliography-bottom-container {
+    margin: 0;
+  }
+  .bibliography-bottom-container .vision-cinema-container {
+    margin: 0 0 25px 0;
+  }
+  .bibliography-bottom-container .adventures-container {
+    margin: 0 0 25px 0;
+  }
+  .bibliography-bottom-container .apu-triology-container {
+    margin: 0 0 25px 0;
+  }
+  .bibliography-bottom-container .years-with-apu-container {
+    margin: 0 0 25px 0;
+  }
+  .bibliography-bottom-container .book-title {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .films-awards .films-top-container {
+    flex-direction: column;
+  }
+  .films-awards .awards {
+    font-size: 15px;
+  }
+  .films-awards .awards-title {
+    font-size: 20px;
+  }
+  .films-awards .awards .stars-image {
+    height: 190px;
+  }
+  .films-awards .awards .satyajit-image {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 359px) {
+  .quote-container .quote-mark {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .quote-container .quote-description {
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .quote-container .quote-by {
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  .about-title {
+    font-size: 20px;
+  }
+  .about-description {
+    font-size: 12px;
+  }
+  .about-button {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  .bibliography-top-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .bibliography-title {
+    font-size: 24px;
+  }
+  .bibliography-left-circle, .bibliography-right-circle {
+    padding: 11px 7px -3px 8px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .copy-rights {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 359px) {
+  .footer .copy-rights {
+    font-size: 12px;
+  }
+}
